@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper">
+          <div class="right">
+            <img width="20px" src="./images/jordan-2.svg" alt="fw" />
+            <img width="30px" src="./images/Converse-logo.png" alt="ada" />
+          </div>
+          <div class="left">
+            <h5>Find a Store</h5>
+            <h5>|</h5>
+            <h5>Help</h5>
+            <h5>|</h5>
+            <h5>Join Us</h5>
+            <h5>|</h5>
+            <h5>Sign In</h5>
+          </div>
+        </div>
+        <!-- ikkinchi -->
+        <section>
+          <div class="two-right">
+            <img
+              width="70px"
+              src="./images/20602d43cc993811e5a6bd1886af4f33.png"
+              alt=""
+            />
+            <h2>New & Featured</h2>
+            <h2>Men</h2>
+            <h2>Women</h2>
+            <h2>Kids</h2>
+            <h2>Jordan</h2>
+            <h2>Sale</h2>
+          </div>
+          <div class="two-left">
+            <img width="19px" src="./images/file.png" alt="fa" />
+            <input id="input" type="number" placeholder="Search" />
+            <img class="fav" width="20px" src="./images/favorite.svg" alt="d" />
+            <img
+              class="car"
+              width="20px"
+              src="./images/shopping-cart-outline.svg"
+              alt="ad"
+            />
+          </div>
+        </section>
+      </header>
+      <!-- swipper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Members: Free Shipping on Orders $50+</div>
+          <div class="swiper-slide">Gear Up for Fall: Use Code Fall:25</div>
+          <div class="swiper-slide">Look for Store Pickup at Checkout</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="contaboss">
+        <div class="contaright">
+          <h1>Mens Clothing(5922)</h1>
+        </div>
+        <div class="contaleft">
+          <h2>Hide Filters</h2>
+          <img
+            width="20px"
+            src="./images/line_basic_uiFilter-512.webp"
+            alt="gh"
+          />
+          <h2>Sort By</h2>
+          <img width="10px" src="./images/file (1).png" alt="ff" />
+        </div>
+      </div>
+
+      <div id="dom"></div>
+    </div>
+
+    <script src="./app.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
